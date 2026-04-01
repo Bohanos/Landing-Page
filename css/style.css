@@ -1,0 +1,123 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+img, video{
+	width: 100%;
+	height: auto;
+}
+body{
+	background-image: url(../picture/day.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	letter-spacing: 0.1rem;
+}
+.nav-container{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	max-width: 1500px;
+	margin: 0 auto;
+	justify-content: space-between;
+	padding: 0.7rem;
+}
+.logo {
+	color: white;
+	font-size: 1.5rem;
+}
+.nav-links{
+	width: 35%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+.nav-links a{
+	text-decoration: none;
+	color: white;
+	font-size: 1.7rem;
+}
+.nav-links a:hover {
+	border-bottom: 0.5rem;
+	text-decoration: underline blue;
+}
+.login-button a{
+	padding: 0.1rem 0.6rem;
+	background-color: blue;
+	color: white;
+	border-radius: 0.2rem;
+	text-decoration: none;
+	font-size: 1.5rem;
+}
+h1{
+	font-size: 2rem;
+	color: white;
+	margin-top: 10rem;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+p{
+	margin-top: 3rem;
+	text-align: center;
+	color: white;
+	font-size: 1.3rem;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+.book-us{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	justify-content: center;
+	padding: 1rem;
+	margin-top: 2rem;
+}
+.book-us a{
+	margin: 2%;
+	text-decoration: none;
+	padding: 0.6rem 0.7rem;
+	color: white;
+	font-size: 1rem;
+	transform: rotate(4deg);
+}
+.sa{
+	background-color: blue;
+}
+.sb{
+	background-color: red;
+}
+
+
+
+
+@media (max-width: 450px){
+	.nav-links a{
+		font-size: 1.2rem;
+	}
+}
+@media (max-width: 768px){
+	.login-button{
+		position: absolute;
+		right: 1rem;
+	}
+	.nav-links{
+		position: relative;
+		top: 2rem;
+		width: 100%;
+	}
+}
+
+@media (min-width: 769px){
+	.nav-links{
+		width: 70%;
+	}
+	.nav-links a{
+		font-size: 2rem;
+	}
+	.logo{
+		font-size: 1.5rem;
+	}
+	.login-button a{
+		font-size: 1.5rem;
+	}
+}
